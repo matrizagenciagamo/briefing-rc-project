@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Briefing Corporativo RC Project | GAMO Agencia Creativa</title>
+  <meta name="description" content="Briefing estratégico para el desarrollo de identidad corporativa de RC Project por GAMO Agencia Creativa." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --violet:#351D48;
+      --green:#68B98C;
+      --ink:#17121d;
+      --muted:#6d6575;
+      --soft:#f4f0f7;
+      --line:#e7e0ec;
+      --white:#ffffff;
+      --radius:24px;
+      --shadow:0 18px 60px rgba(53,29,72,.16);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"IBM Plex Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,#fbf8fd 100%)}
+    a{color:inherit}
+    .mono{font-family:"IBM Plex Mono",monospace}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.02em;color:var(--violet)}
+    .brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--violet),#5b3772);display:grid;place-items:center;color:#fff;font-family:"IBM Plex Mono";font-weight:700;box-shadow:0 10px 30px rgba(53,29,72,.22)}
+    .nav-actions{display:flex;gap:10px;align-items:center}
+    .pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid transparent;transition:.2s ease}
+    .pill.primary{background:var(--green);color:#102016}.pill.primary:hover{transform:translateY(-1px);filter:saturate(1.08)}
+    .pill.ghost{border-color:var(--line);color:var(--violet);background:#fff}.pill.ghost:hover{background:var(--soft)}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 15% 0%,rgba(104,185,140,.38),transparent 30%),radial-gradient(circle at 85% 10%,rgba(53,29,72,.24),transparent 34%),linear-gradient(135deg,#fff,#faf6fd);border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;padding:76px 0 64px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:13px;color:var(--violet);font-weight:700;box-shadow:0 8px 26px rgba(53,29,72,.08)}
+    h1{font-size:clamp(42px,6vw,78px);line-height:.96;margin:18px 0 22px;letter-spacing:-.07em;color:var(--violet)}
+    .lead{font-size:19px;line-height:1.7;color:#53485f;max-width:750px;margin:0 0 28px}
+    .hero-card{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:34px;padding:24px;box-shadow:var(--shadow)}
+    .process{display:grid;gap:13px}.process-item{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:16px;border-radius:22px}.num{width:32px;height:32px;border-radius:50%;background:var(--violet);color:#fff;display:grid;place-items:center;font-family:"IBM Plex Mono";font-size:13px;flex:0 0 auto}.process-item strong{display:block;color:var(--violet);margin-bottom:3px}.process-item span{color:var(--muted);font-size:14px;line-height:1.5}
+    .intro{padding:46px 0}.intro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.info-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 10px 35px rgba(53,29,72,.06)}.info-card b{display:block;color:var(--violet);margin-bottom:8px}.info-card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+    .form-shell{padding:28px 0 80px}.form-layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:26px;align-items:start}.sidebar{position:sticky;top:98px;background:var(--violet);color:#fff;border-radius:30px;padding:24px;box-shadow:var(--shadow)}.sidebar h3{margin:0 0 14px;font-size:22px;letter-spacing:-.03em}.sidebar p,.sidebar li{color:rgba(255,255,255,.78);line-height:1.6;font-size:14px}.sidebar ul{padding-left:18px;margin:12px 0 0}.sidebar .mini{margin-top:18px;padding:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:20px}
+    form{display:grid;gap:22px}.section{background:#fff;border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:0 12px 42px rgba(53,29,72,.08)}.section-head{margin-bottom:22px}.eyebrow{font-family:"IBM Plex Mono";font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700}.section h2{margin:7px 0 7px;font-size:30px;line-height:1.08;color:var(--violet);letter-spacing:-.04em}.section p.help{margin:0;color:var(--muted);line-height:1.6}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.field{display:block}.field span.label{display:block;font-weight:700;color:var(--ink);font-size:14px;margin-bottom:8px}.req{color:var(--green)}input,textarea,select{width:100%;border:1px solid var(--line);background:#fff;border-radius:18px;padding:14px 15px;font:inherit;color:var(--ink);outline:none;transition:.2s ease}textarea{min-height:116px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--violet);box-shadow:0 0 0 5px rgba(53,29,72,.08)}.hint{display:block;margin-top:6px;color:#8b8292;font-size:12px;line-height:1.5}.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.check,.radio{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:18px;padding:14px;background:#fff;color:var(--muted);font-size:14px;line-height:1.45;cursor:pointer;transition:.2s ease}.check:hover,.radio:hover{border-color:#d1c4da;background:#fbf8fd}.check input,.radio input{width:auto;margin-top:3px;accent-color:var(--violet)}.radio{display:block}.radio input{display:none}.radio b{display:block;color:var(--violet);margin-bottom:4px}.radio:has(input:checked){background:var(--violet);color:#fff;border-color:var(--violet)}.radio:has(input:checked) b{color:#fff}.notice{border:1px solid rgba(104,185,140,.4);background:rgba(104,185,140,.12);border-radius:22px;padding:18px;color:#264b37;line-height:1.6;font-size:14px}.consent{display:flex;gap:12px;align-items:flex-start;background:#faf7fc;border:1px solid var(--line);border-radius:20px;padding:16px;color:var(--muted);font-size:14px;line-height:1.6}.consent input{width:auto;margin-top:3px;accent-color:var(--violet)}.submit-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.button{border:0;border-radius:999px;background:var(--green);color:#102016;padding:16px 24px;font-weight:800;font-size:15px;cursor:pointer;box-shadow:0 14px 36px rgba(104,185,140,.32);transition:.2s ease}.button:hover{transform:translateY(-1px);filter:saturate(1.08)}.secondary-note{color:var(--muted);font-size:13px;line-height:1.5}.footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px;background:#fff}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.hidden{display:none!important}
+    @media (max-width:960px){.hero-grid,.form-layout{grid-template-columns:1fr}.sidebar{position:static}.intro-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:680px){.nav{height:auto;padding:14px 0;align-items:flex-start}.nav-actions{display:none}.hero-grid{padding:46px 0 38px}.intro-grid,.grid-2,.grid-3,.checks{grid-template-columns:1fr}.section{padding:22px;border-radius:24px}.section h2{font-size:25px}.footer .wrap{display:block}.pill{width:100%;margin-top:10px}.brand-mark{width:38px;height:38px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <div class="brand"><div class="brand-mark">G</div><div><div>GAMO Agencia Creativa</div><small class="mono" style="font-weight:500;color:#6d6575">Brand Project Manager</small></div></div>
+      <div class="nav-actions"><a class="pill ghost" href="#proceso">Proceso</a><a class="pill primary" href="#briefing">Rellenar briefing</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="badge mono">Briefing estratégico · RC Project</span>
+          <h1>La marca empieza antes del logo.</h1>
+          <p class="lead">Este formulario nos ayudará a definir el enfoque visual y estratégico de RC Project para desarrollar hasta tres propuestas iniciales de identidad corporativa. La propuesta seleccionada será la base para construir el manual de identidad y sus aplicaciones reales en el nuevo centro.</p>
+          <a class="pill primary" href="#briefing">Comenzar briefing</a>
+        </div>
+        <aside class="hero-card" id="proceso">
+          <div class="process">
+            <div class="process-item"><div class="num">01</div><div><strong>Briefing estratégico</strong><span>Recogida de visión, negocio, referencias, necesidades y aplicaciones de marca.</span></div></div>
+            <div class="process-item"><div class="num">02</div><div><strong>3 propuestas iniciales</strong><span>Desarrollo de tres líneas visuales para valorar posicionamiento, tono y potencial de implantación.</span></div></div>
+            <div class="process-item"><div class="num">03</div><div><strong>Selección de propuesta</strong><span>Elección de la línea ganadora y ajustes necesarios antes de cerrar identidad.</span></div></div>
+            <div class="process-item"><div class="num">04</div><div><strong>Manual corporativo</strong><span>Normas de uso, colores, tipografías, aplicaciones físicas, digitales y comerciales.</span></div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="wrap intro-grid">
+        <div class="info-card"><b>Marca</b><p>Queremos entender qué debe transmitir RC Project y qué territorio visual debe ocupar.</p></div>
+        <div class="info-card"><b>Negocio</b><p>El briefing conecta identidad, cliente ideal, nutrición, comunidad y posibles ingresos añadidos.</p></div>
+        <div class="info-card"><b>Local</b><p>La marca se pensará para fachada, interiores, señalética, ropa, redes y experiencia.</p></div>
+        <div class="info-card"><b>Decisión</b><p>Con las respuestas podremos plantear tres rutas creativas con criterio, no a ojo.</p></div>
+      </div>
+    </section>
+
+    <section class="form-shell" id="briefing">
+      <div class="wrap form-layout">
+        <form action="https://formsubmit.co/alberto@agenciagamo.es" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="Nuevo briefing corporativo RC Project - Identidad visual" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_honey" value="" />
+          <input type="hidden" name="Proyecto" value="RC Project - Manual de identidad corporativa" />
+          <input type="hidden" name="Agencia" value="GAMO Agencia Creativa" />
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 01</div><h2>Datos de contacto</h2><p class="help">Datos de la persona o personas responsables de validar la identidad corporativa.</p></div>
+            <div class="grid-2">
+              <label class="field"><span class="label">Nombre y apellidos <span class="req">*</span></span><input name="Nombre y apellidos" required placeholder="Nombre de la persona responsable"></label>
+              <label class="field"><span class="label">Cargo / responsabilidad <span class="req">*</span></span><input name="Cargo" required placeholder="Socio, gerente, entrenador, responsable de marca..."></label>
+              <label class="field"><span class="label">Email <span class="req">*</span></span><input name="email" type="email" required placeholder="correo@rcproject.app"></label>
+              <label class="field"><span class="label">Teléfono <span class="req">*</span></span><input name="Teléfono" type="tel" required placeholder="600 000 000"></label>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 02</div><h2>Visión y posicionamiento</h2><p class="help">Aquí definimos hacia dónde debe caminar la marca. Sin esto, diseñar es jugar a la ruleta rusa, pero con tipografías.</p></div>
+            <label class="field"><span class="label">¿Cómo definiríais RC Project en una sola frase? <span class="req">*</span></span><textarea name="Definición de RC Project" required placeholder="Ej. Centro de entrenamiento funcional enfocado en rendimiento, comunidad y mejora física real."></textarea></label><br>
+            <label class="field"><span class="label">¿Qué queréis que piense una persona al entrar por primera vez al nuevo centro? <span class="req">*</span></span><textarea name="Primera percepción deseada" required placeholder="Sensación, nivel, profesionalidad, cercanía, energía, confianza..."></textarea></label><br>
+            <label class="field"><span class="label">¿Dónde queréis que esté RC Project dentro de 3-5 años? <span class="req">*</span></span><textarea name="Visión a 3-5 años" required placeholder="Crecimiento, expansión, nuevos servicios, comunidad, nutrición, eventos, planes premium..."></textarea></label><br>
+            <span class="label" style="display:block;font-weight:700;margin-bottom:10px">Posicionamiento deseado</span>
+            <div class="grid-3">
+              <label class="radio"><input type="radio" name="Posicionamiento deseado" value="Comunidad cercana"><b>Comunidad cercana</b>Accesible, familiar, de grupo y pertenencia.</label>
+              <label class="radio"><input type="radio" name="Posicionamiento deseado" value="Técnico rendimiento"><b>Técnico / rendimiento</b>Profesional, físico, exigente y orientado a resultados.</label>
+              <label class="radio"><input type="radio" name="Posicionamiento deseado" value="Boutique premium"><b>Boutique premium</b>Más cuidado, aspiracional, estético y diferencial.</label>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 03</div><h2>Cliente ideal y modelo de negocio</h2><p class="help">La identidad tiene que vender mejor, fidelizar mejor y ayudar a ordenar el crecimiento.</p></div>
+            <label class="field"><span class="label">¿Cuál es vuestro cliente ideal? <span class="req">*</span></span><textarea name="Cliente ideal" required placeholder="Edad, objetivos, perfil físico, nivel económico, hábitos, motivaciones, problemas que quiere resolver..."></textarea></label><br>
+            <label class="field"><span class="label">Servicios actuales y futuros</span></label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="Servicios" value="Entrenamiento funcional">Entrenamiento funcional</label>
+              <label class="check"><input type="checkbox" name="Servicios" value="Hyrox / preparación competición">Hyrox / preparación competición</label>
+              <label class="check"><input type="checkbox" name="Servicios" value="Entrenamiento personal">Entrenamiento personal</label>
+              <label class="check"><input type="checkbox" name="Servicios" value="Nutrición">Nutrición</label>
+              <label class="check"><input type="checkbox" name="Servicios" value="Fisioterapia / recuperación">Fisioterapia / recuperación</label>
+              <label class="check"><input type="checkbox" name="Servicios" value="Suplementación / colaboración HSN">Suplementación / colaboración HSN</label>
+              <label class="check"><input type="checkbox" name="Servicios" value="Eventos / comunidad">Eventos / comunidad</label>
+              <label class="check"><input type="checkbox" name="Servicios" value="Planes premium">Planes premium / membresías avanzadas</label>
+            </div><br>
+            <label class="field"><span class="label">¿Qué peso debe tener la nutrición en la nueva etapa?</span><select name="Peso de nutrición"><option value="">Seleccionar</option><option>Complementaria, pero no prioritaria</option><option>Importante como servicio recurrente</option><option>Muy importante: línea clara de ingresos</option><option>Debe convertirse en uno de los pilares de RC Project</option></select></label><br>
+            <label class="field"><span class="label">¿Qué servicios os gustaría vender además de la cuota mensual?</span><textarea name="Servicios adicionales" placeholder="Bonos, valoraciones, nutrición, retos, empresas, merchandising, eventos, recuperación..."></textarea></label>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 04</div><h2>Personalidad y estilo visual</h2><p class="help">No buscamos un logo bonito: buscamos una dirección visual que pueda sostener la marca.</p></div>
+            <label class="field"><span class="label">¿Qué palabras deberían definir la marca? Elige las más importantes.</span></label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Fuerte">Fuerte</label>
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Técnica">Técnica</label>
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Cercana">Cercana</label>
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Premium">Premium</label>
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Urbana">Urbana</label>
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Minimalista">Minimalista</label>
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Competitiva">Competitiva</label>
+              <label class="check"><input type="checkbox" name="Personalidad de marca" value="Comunidad">Comunidad</label>
+            </div><br>
+            <div class="grid-2">
+              <label class="field"><span class="label">Colores que os gustan o queréis valorar</span><textarea name="Colores deseados" placeholder="Colores, sensaciones, tonos, referencias..."></textarea></label>
+              <label class="field"><span class="label">Colores o estilos que queréis evitar</span><textarea name="Colores o estilos a evitar" placeholder="Ej. No queremos parecer un gimnasio low cost / no queremos flúor / no queremos algo agresivo..."></textarea></label>
+            </div><br>
+            <label class="field"><span class="label">Marcas, gimnasios, estudios o cuentas que os gusten</span><textarea name="Referencias positivas" placeholder="Pegad enlaces, nombres de cuentas o marcas que sirvan como referencia visual o estratégica."></textarea></label><br>
+            <label class="field"><span class="label">Marcas o estilos que NO queréis pareceros</span><textarea name="Referencias negativas" placeholder="Esto es casi tan importante como saber lo que os gusta."></textarea></label>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 05</div><h2>Experiencia de cliente</h2><p class="help">La nueva marca debe vivirse dentro del local: entrada, recepción, entrenamiento, nutrición, comunidad y salida.</p></div>
+            <label class="field"><span class="label">Elementos de experiencia que os gustaría valorar</span></label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Recepción / bienvenida">Recepción / punto de bienvenida</label>
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Zona de espera / rincón social">Zona de espera / rincón social</label>
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Café / bebida funcional">Café / bebida funcional</label>
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Amenities básicos">Amenities básicos</label>
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Rincón nutricional">Rincón nutricional</label>
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Expositor suplementación">Expositor de suplementación</label>
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Zona foto / redes">Zona fotográfica para redes</label>
+              <label class="check"><input type="checkbox" name="Experiencia de cliente" value="Eventos / charlas">Espacio para eventos o charlas</label>
+            </div><br>
+            <label class="field"><span class="label">¿Qué debería mejorar respecto al gimnasio actual? <span class="req">*</span></span><textarea name="Mejoras frente a centro actual" required placeholder="Imagen, recorridos, comodidad, servicios, iluminación, ruido, vestuarios, experiencia, tecnología..."></textarea></label><br>
+            <label class="field"><span class="label">¿Qué momentos del cliente queréis cuidar especialmente?</span><textarea name="Momentos clave de cliente" placeholder="Primera visita, valoración inicial, alta, entrenamiento, revisión mensual, nutrición, fidelización..."></textarea></label>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 06</div><h2>Aplicaciones de marca en el local</h2><p class="help">Estas respuestas ayudan a que las propuestas de logo nazcan pensando en ejecución real, no en una pantalla aislada.</p></div>
+            <label class="field"><span class="label">Aplicaciones que deberá contemplar la identidad</span></label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Fachada exterior">Fachada exterior</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Rótulo principal">Rótulo principal</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Acceso / puerta">Acceso / puerta de entrada</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Recepción">Recepción</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Zona principal entrenamiento">Zona principal de entrenamiento</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Wall climb">Zona wall climb</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Baños / vestuarios">Baños / vestuarios</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Zona nutrición">Zona nutrición</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Vehículo comercial">Vehículo comercial rotulado</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Merchandising">Camisetas, sudaderas, bidón y merchandising</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Plantillas redes">Plantillas base para redes</label>
+              <label class="check"><input type="checkbox" name="Aplicaciones de marca" value="Firma email / documentación">Firma de email y documentación básica</label>
+            </div><br>
+            <label class="field"><span class="label">¿Qué equipamiento tenéis previsto trasladar o incorporar? <span class="req">*</span></span><textarea name="Equipamiento previsto" required placeholder="Racks, barras, discos, suelo técnico, cardio, wall climb, máquinas, elementos especiales..."></textarea></label><br>
+            <label class="field"><span class="label">Necesidades técnicas o condicionantes del local</span><textarea name="Condicionantes técnicos" placeholder="Ruido, impacto, electricidad, iluminación, climatización, ventilación, alturas, accesos, almacén, horarios..."></textarea></label>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 07</div><h2>Iluminación, domótica y eficiencia</h2><p class="help">La identidad también puede apoyarse en ambiente, color, escenas y control del espacio.</p></div>
+            <label class="field"><span class="label">Escenas o ambientes que tendría sentido crear</span></label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Apertura del centro">Apertura del centro</label>
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Entrenamiento intenso">Entrenamiento intenso</label>
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Clase dirigida">Clase dirigida</label>
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Valoración / nutrición">Valoración / nutrición</label>
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Grabación de contenido">Grabación de contenido</label>
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Evento / charla">Evento / charla</label>
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Limpieza">Limpieza</label>
+              <label class="check"><input type="checkbox" name="Escenas de iluminación" value="Cierre / ahorro energético">Cierre / ahorro energético</label>
+            </div><br>
+            <label class="field"><span class="label">¿Qué os gustaría poder controlar de forma automatizada?</span><textarea name="Automatizaciones deseadas" placeholder="Luces por zonas, rótulo, climatización, horarios, sensores, apagado general, consumos..."></textarea></label>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 08</div><h2>Comunicación, redes y contenido</h2><p class="help">La marca debe funcionar en el local, pero también en Instagram, TikTok, Google y campañas de apertura.</p></div>
+            <label class="field"><span class="label">Canales principales</span></label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="Canales" value="Instagram">Instagram</label>
+              <label class="check"><input type="checkbox" name="Canales" value="TikTok">TikTok</label>
+              <label class="check"><input type="checkbox" name="Canales" value="YouTube Shorts">YouTube Shorts</label>
+              <label class="check"><input type="checkbox" name="Canales" value="Google Business Profile">Google Business Profile</label>
+              <label class="check"><input type="checkbox" name="Canales" value="WhatsApp">WhatsApp</label>
+              <label class="check"><input type="checkbox" name="Canales" value="Email marketing">Email marketing</label>
+            </div><br>
+            <label class="field"><span class="label">¿Qué tipo de contenido queréis potenciar?</span><textarea name="Contenido a potenciar" placeholder="Entrenamientos reales, retos, nutrición, técnica, comunidad, testimonios, eventos, antes/después..."></textarea></label><br>
+            <label class="field"><span class="label">¿Hay alguna campaña de apertura, lanzamiento o preapertura prevista?</span><textarea name="Campaña de apertura" placeholder="Fechas, ideas, promociones, vídeos, invitados, comunidad, evento inaugural..."></textarea></label>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><div class="eyebrow">Bloque 09</div><h2>Material disponible</h2><p class="help">Adjuntad lo que tengáis. Aunque no sea perfecto, nos ayuda a tomar mejores decisiones.</p></div>
+            <label class="field"><span class="label">Archivos de referencia</span><input name="Archivos adjuntos" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,.webp,.svg,.ai,.eps,.zip,.dwg,.dxf"><span class="hint">Podéis adjuntar logo actual, planos, fotos, referencias, capturas o documentos. Si los archivos pesan mucho, enviad enlace de Drive/WeTransfer en el campo siguiente.</span></label><br>
+            <label class="field"><span class="label">Enlaces a Drive, WeTransfer, webs o referencias</span><textarea name="Enlaces de material" placeholder="Pegad aquí enlaces a carpetas, webs, perfiles, referencias o material complementario."></textarea></label><br>
+            <label class="field"><span class="label">Comentarios finales</span><textarea name="Comentarios finales" placeholder="Cualquier dato que deba tenerse en cuenta antes de empezar con las 3 propuestas iniciales."></textarea></label><br>
+            <div class="notice"><strong>Siguiente paso:</strong> con este briefing completo, GAMO Agencia Creativa preparará las tres líneas iniciales de identidad visual. Sobre la propuesta seleccionada se desarrollará el manual de identidad corporativa y sus aplicaciones.</div><br>
+            <label class="consent"><input type="checkbox" required name="Consentimiento" value="Aceptado"><span>Acepto que GAMO Agencia Creativa utilice esta información para preparar el proceso de identidad corporativa, desarrollo de propuestas visuales e implantación de marca de RC Project.</span></label><br>
+            <div class="submit-row"><button class="button" type="submit">Enviar briefing corporativo</button><span class="secondary-note">Recibiréis una confirmación del envío. La primera vez, FormSubmit puede solicitar validación del email receptor.</span></div>
+          </div>
+        </form>
+
+        <aside class="sidebar">
+          <h3>Qué vamos a conseguir</h3>
+          <p>Este briefing nos da munición estratégica para diseñar tres propuestas con criterio.</p>
+          <ul>
+            <li>Posicionamiento claro.</li>
+            <li>Referencias visuales útiles.</li>
+            <li>Aplicaciones reales en local.</li>
+            <li>Necesidades de negocio y experiencia.</li>
+            <li>Base sólida para el manual corporativo.</li>
+          </ul>
+          <div class="mini"><strong>GAMO tip:</strong><br><span>Cuanto mejores sean las respuestas, menos “me gusta/no me gusta” y más decisiones con foco.</span></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><span>GAMO Agencia Creativa · Gallego & Gamo Projects S.L.</span><span class="mono">gamoestudio.es · gallegoprojects.es</span></div>
+  </footer>
+</body>
+</html>
